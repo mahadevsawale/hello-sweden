@@ -1,1 +1,11 @@
 apply plugin: 'java'
+
+repositories {
+    maven {
+        url 'http://oasartifactory/artifactory/repo'
+    }
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+}
