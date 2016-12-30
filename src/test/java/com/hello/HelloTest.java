@@ -12,4 +12,12 @@ public class HelloTest {
 
         Assert.assertEquals(expectedHello, actualHello);
     }
+
+    @Test
+    public void testSayHelloFail() {
+        final String expectedHello = "Hello India!!!";
+        final String actualHello = Hello.sayHello("Sweden");
+
+        Assert.assertEquals(expectedHello, actualHello);
+    }
 }
