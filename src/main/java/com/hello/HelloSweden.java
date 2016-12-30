@@ -1,4 +1,4 @@
-package com.scania.hello;
+package com.hello;
 
 public class HelloSweden {
 
