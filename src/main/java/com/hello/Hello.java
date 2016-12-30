@@ -3,11 +3,16 @@ package com.hello;
 public class Hello {
 
     public static void main (String args[]) {
-        final String sweden = sayHello("Sweden");
-        System.out.println(sweden);
+        if(args != null && args.length != 0) {
+            for (final String country : args) {
+                System.out.println(sayHello(country));
+            }
+        } else {
+            System.out.println(sayHello("Sweden"));
+        }
     }
 
-    public static String sayHello(final String country) {
+    static String sayHello(final String country) {
         return "Hello "+ country+ "!!!";
     }
 }
