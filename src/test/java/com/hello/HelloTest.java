@@ -9,6 +9,9 @@ import java.util.Set;
 
 public class HelloTest {
 
+    /**
+     * Tests that sayHello method returns expected string message
+     */
     @Test
     public void sayHello() {
         final String expectedHello = "Hello Sweden!!!";
@@ -17,6 +20,9 @@ public class HelloTest {
         Assert.assertEquals(expectedHello, actualHello);
     }
 
+    /**
+     * Tests that sayHello method returns unexpected string message
+     */
     @Test
     public void sayHello2() {
         final String expectedHello = "Hello India!!!";
@@ -26,6 +32,9 @@ public class HelloTest {
     }
 
 
+    /**
+     * Tests that sayHelloToAll method returns expected set of string message
+     */
     @Test
     public void sayHelloToNeighbours() {
 
