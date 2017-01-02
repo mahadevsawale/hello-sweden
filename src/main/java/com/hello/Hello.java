@@ -1,5 +1,12 @@
 package com.hello;
 
+
+import org.jetbrains.annotations.NotNull;
+
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
+
 public class Hello {
 
     public static void main (String args[]) {
@@ -12,7 +19,18 @@ public class Hello {
         }
     }
 
-    static String sayHello(final String country) {
+    @NotNull
+    static String sayHello(@NotNull final String country) {
         return "Hello "+ country+ "!!!";
+    }
+
+
+    @NotNull
+    static Collection<String> sayHelloToAll(@NotNull final Collection<String> countries) {
+        final Set<String> helloSet = new HashSet<>();
+        for (final String country : countries) {
+            helloSet.add("Hello "+ country+ "!!!");
+        }
+        return helloSet;
     }
 }

@@ -8,4 +8,5 @@ repositories {
 
 dependencies {
     testCompile 'junit:junit:4.12'
+    compile "com.intellij:annotations:12.1.6"
 }
