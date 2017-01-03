@@ -1,7 +1,6 @@
 package com.hello;
 
-import com.sun.istack.internal.NotNull;
-
+import org.jetbrains.annotations.NotNull;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
